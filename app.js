@@ -73,8 +73,8 @@ class ThemeSwitcher {
 
   function fetchWeatherData() {
     const weatherInfo = document.getElementById('weather-info');
-    const apiKey = 'd2af86cf2d134bf4b4b103631230211'; // Replace with your API key
-    const location = 'Oulu'; // Replace with the desired location or coordinates
+    const apiKey = 'd2af86cf2d134bf4b4b103631230211'; 
+    const location = 'Oulu'; 
     const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${location}&aqi=no`;
   
     fetch(apiUrl)
