@@ -104,6 +104,28 @@ class ThemeSwitcher {
   }
   
   fetchWeatherData();
+  const timerElement = document.getElementById('timer');
+const timeElement = document.getElementById('time');
+
+let startTime = new Date().getTime();
+
+function updateTimer() {
+  const currentTime = new Date().getTime();
+  const elapsedTime = currentTime - startTime;
+
+  const minutes = Math.floor(elapsedTime / 60000);
+  const seconds = Math.floor((elapsedTime % 60000) / 1000);
+
+  const formattedTime = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+
+  timeElement.textContent = formattedTime;
+}
+
+const timerInterval = setInterval(updateTimer, 1000);
+
+
+
+
   
 
 
