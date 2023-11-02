@@ -38,8 +38,7 @@ Kohdat joissa on :hover{}- toiminnallisuutta? (esim: .main-btn:hover{})
 
 JAVA:
 1/5:
-
-Koodi ei sisällä hälytyksiä painikkeen napsautuksella. 
+Kun käyttäjä painaa DownloadCv nappia pitäisi ylös ilmestyä teksti: " cv download will start shortly"
 2/5:
 
 Useampi EventListener löytyy.
