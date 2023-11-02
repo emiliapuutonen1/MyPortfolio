@@ -100,6 +100,7 @@ section{
     
 }
 
+
 .active{
     display:block;
     animation: scaleAnim .8s ease-in-out;
@@ -119,7 +120,7 @@ section{
 .controls{
     position: fixed;
     z-index: 10;
-    top: 50%;
+    top: 60%;
     right: 3%;
     display: flex;
     flex-direction: column;
@@ -154,9 +155,10 @@ section{
             pointer-events: none;
         }
     }
+    
 }
 .theme-btn{
-    top: 5%;
+bottom: 3%;
 right: 3%;
 width: 70px;
 height: 70px;
@@ -227,6 +229,7 @@ i{
         line-height: 2rem;
     }
     }
+    
 }
 
 .about-container{
@@ -528,10 +531,11 @@ p{
 }
 .contact-content-container{
 	display:flex;
+    justify-content: space-between;
     width: 100%; 
     max-width: 1200px; 
     margin: 0 auto;
-	padding-top: 3.5rem;
+	padding: 3.5rem; //3.6rem
     
 	.left-contact{
 		flex: 3;
@@ -573,6 +577,7 @@ p{
 
             }
         }
+        
         .contact-icon{
             display: flex;
             margin-top: 2rem;
@@ -603,45 +608,9 @@ p{
             }
         }
 }
-    .right-contact{
-        flex: 3;
-        margin-left: 3rem;
-        .input-control{
-	        margin: 3.5rem 0;
-	        input, textarea{
-		    border-radius: 30px;
-		    font-weight: inherit;
-		    font-size: inherit;
-		    font-family: inherit;
-		    padding: .8rem 1.1rem;
-            outline: none;
-            border: none;       
-            background-color: var(--color-grey-2);
-            width:100%;
-            color: var(--color-white);
-            resize: none;
-
-}
-
-}
-.i-c-2{
-    display: flex;
-    :last-child{
-        margin-left: 1.5rem;
-    }
-}
-.submit-btn{
-    display: flex;
-    justify-content: flex-start;
-    }
-}
-
     }
     
-
-
-
-
+    
 
 .btn-container{
 	display:flex;
@@ -680,8 +649,36 @@ p{
         }
     }
 }
+//
 
+.submitbtn-container{
+	display:flex;
+	align-self: flex-start;
+}
 
+.sub-btn {
+    border-radius: 30px;
+    color: inherit;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    transition: all .4s ease-in-out;
+    
+    &:hover {
+        background-color: var(--color-secondary); 
+        i {
+            color: var(--color-white); 
+        }
+    }
+
+    .subbtn-text {
+        padding: 0 2rem;
+    }
+
+    
+}
+
+//
 .main-title {
     text-align: center;
     h2 {
