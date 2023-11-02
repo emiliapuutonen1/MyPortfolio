@@ -123,6 +123,13 @@ function updateTimer() {
 
 const timerInterval = setInterval(updateTimer, 1000);
 
+const downloadCvButton = document.querySelector('.main-btn');
+
+downloadCvButton.addEventListener('click', () => {
+  alert('CV download will start shortly.'); 
+});
+
+
 
 
 
